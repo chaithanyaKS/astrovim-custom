@@ -1,16 +1,16 @@
 return {
   -- Add the community repository of plugin specifications
   "ur4ltz/surround.nvim",
-  lazy=false,
+  lazy = false,
   config = function()
-    require"surround".setup {
-       context_offset = 100,
+    require "surround".setup {
+      context_offset = 100,
       load_autogroups = false,
-      prompt= false,
+      prompt = false,
       mappings_style = 'surround',
       map_insert_mode = true,
-      quotes = {"'", '"'},
-      brackets = {"(", '{', '['},
+      quotes = { "'", '"' },
+      brackets = { "(", '{', '[' },
       space_on_closing_char = false,
       pairs = {
         nestable = { b = { "(", ")" }, s = { "[", "]" }, B = { "{", "}" }, a = { "<", ">" } },
